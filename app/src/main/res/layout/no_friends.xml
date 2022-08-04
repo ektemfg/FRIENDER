@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    tools:ignore="RtlHardcoded"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="14dp">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/noFriendsAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/transparent"
+        android:foregroundGravity="center"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/no_friends_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/sademoji"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/no_friends_title"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="We need to tell you something"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noFriendsAnimation" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/noFriendMessage"
+        android:layout_width="395dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="21dp"
+        android:background="@color/transparent"
+        android:foregroundGravity="center"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/go_find_friends"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_friends_title"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/nofriendmessage"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/go_find_friends"
+        android:layout_width="207dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:text="GO GET THEM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noFriendMessage" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/fistBumpAnimation"
+        android:layout_width="395dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/transparent"
+        android:foregroundGravity="center"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/go_find_friends"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/arowup"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

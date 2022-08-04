@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/friendsFragment"
+        android:name="com.jorfald.friender.view.app.FriendsFragment"
+        android:label="fragment_friend_search_views"
+        tools:layout="@layout/fragment_friend_search_views"
+        >
+        <action
+            android:id="@+id/action_friendsFragment2_to_friendsListFragment"
+            app:destination="@id/friendsListFragment" />
+        <action
+            android:id="@+id/action_friendsFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/nav_graph.xml"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/friendsListFragment"
+        android:name="com.jorfald.friender.view.app.FriendsListFragment"
+        android:label="FriendsListFragment">
+        <action
+            android:id="@+id/action_friendsListFragment_to_friendsFragment2"
+            app:destination="@id/friendsFragment" />
+        <action
+            android:id="@+id/action_friendsListFragment_to_friendInfo2"
+            app:destination="@id/FriendsInfo"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/FriendsInfo"
+        android:name="com.jorfald.friender.view.app.FriendsInfoFragment"
+        android:label="fragment_friend_info"
+        tools:layout="@layout/fragment_friend_info" >
+        <action
+            android:id="@+id/action_friendInfo_to_friendsListFragment2"
+            app:destination="@id/friendsListFragment"
+            app:popUpTo="@id/friendsFragment"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="sentFriend"
+            app:argType="com.jorfald.friender.model.dataClasses.Friend" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.jorfald.friender.view.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_friendsFragment"
+            app:destination="@id/friendsFragment"
+            app:popUpTo="@id/nav_graph.xml"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

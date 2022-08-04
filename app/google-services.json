@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "506352815331",
+    "project_id": "friender-d4bdc",
+    "storage_bucket": "friender-d4bdc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506352815331:android:989667eec063db9dd309d6",
+        "android_client_info": {
+          "package_name": "com.jorfald.friender"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "506352815331-jbqrm5l696gtav5v7oh8aaubk50fiimf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXpiQXTV_OijtVlngw50tpiuzKdRRSg_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "506352815331-jbqrm5l696gtav5v7oh8aaubk50fiimf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
